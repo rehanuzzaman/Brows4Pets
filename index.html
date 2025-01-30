@@ -27,12 +27,17 @@
         }
     </style>
 
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/30ad6389ff.js" crossorigin="anonymous"></script>
+
+    <!--Color Script-->
     <script>
         tailwind.config = {
         theme: {
             extend: {
             colors: {
                 accent: '#FFDC26',
+                primary: '#F9DF8A',
                 background: '#FFF9F4',
             }
             }
@@ -43,8 +48,24 @@
 </head>
 <body class="sora-regular mx-auto text-[#111111]">
     <header>
-        <nav>
-            
+        <nav class="bg-background flex justify-between items-center px-20 py-5">
+            <div class="flex items-center space-x-3">
+                <img src="./Assets/logo-header.png" alt="Header Logo">
+                <h1>Brows<span class="text-accent">4</span>Pets</h1>
+            </div>
+            <div>
+                <ul class="flex space-x-5">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="flex space-x-5 items-center">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="btn bg-background">Login</button>
+                <button class="btn bg-accent">Register</button>
+            </div>
         </nav>
     </header>
 
