@@ -46,9 +46,10 @@
     </script>
 
 </head>
-<body class="sora-regular mx-3 md:mx-auto text-[#111]">
+<body class="sora-regular md:mx-auto text-[#111]">
     <header>
-        <nav class="bg-background flex justify-between items-center px-5 py-5 md:px-20 md:py-5">
+        <!--Navigation Bard-->
+        <nav class="bg-background flex justify-between items-center px-5 py-5 md:px-48 md:py-5">
             <div class="flex items-center space-x-3">
                 <div>
                     <img src="./Assets/logo-header.png" alt="Header Logo">
@@ -74,21 +75,24 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-        <section class="bg-cover bg-no-repeat  md:min-h-screen container mx-auto" style="background-image: url(./Assets/cat-big.png);">
-            <h1 class="pt-28 md:text-6xl text-3xl font-bold adlam-regular">Pamper Your pet,<br>Because They Deserve<br>the Best!</h1>
+        <!--Header Area-->
+        <section class="relative bg-cover bg-no-repeat container mx-auto px-5 py-5">
+            <h1 class="md:mt-28 md:text-6xl text-3xl font-bold adlam-regular">Pamper Your pet,<br>Because They Deserve<br>the Best!</h1>
             <p class="py-5 md:text-xl text-base">
                 Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and make tails wag with joy!
             </p>
             <button class="btn bg-accent px-10 animate-bounce hover:bg-black hover:text-white">
                 <i class="fa-solid fa-dog"></i>Find a Pet
             </button>
+            <img class="absolute -ml-2 top-64 w-[95%] md:top-0 -z-10" src="./Assets/cat-big.png" alt="">
         </section>
     </header>
-
-    <main class="container mx-auto">
-        <section class="my-16 flex items-center flex-col md:flex-row">
-            <div class="w-9/12">
-                <h1 class="adlam-regular text-2xl md:text-4xl">About Us</h1>
+    <!--Main-->
+    <main>
+        <!--About Section-->
+        <section class="container mx-auto px-5 md:px-0 my-16 flex items-center flex-col md:mt-96 md:flex-row">
+            <div class="md:w-9/12">
+                <h1 class="pt-14 adlam-regular text-2xl md:text-4xl">About Us</h1>
                 <p class="text-justify">
                 <br>
                 At <b>Brows4Pets</b>, we believe that every pet deserves the very best. Our mission is to create a world where pets are pampered, loved, and celebrated for the joy they bring into our lives. Whether you’re a proud cat parent, a devoted dog lover, or a fan of all furry (and not-so-furry) friends, we’re here to make life better for you and your pets.
@@ -104,9 +108,10 @@
                 <img src="./Assets/dog grooming.webp" alt="Dog Image">
             </div>
         </section>
-        <section class="my-16 md:px-0">
+        <!--Categories-->
+        <section class="my-16 md:px-0 container mx-auto px-5">
             <h1 class="adlam-regular pb-5 md:pb-10 text-2xl md:text-4xl">Brows By Categories</h1>
-            <div class="grid grid-cols-2 gap-5 md:gap-20 md:grid-cols-6">
+            <div class="grid grid-cols-2 gap-2 md:gap-10 md:grid-cols-6">
                 <div class="bg-primary rounded-lg p-6 text-center flex flex-col items-center space-y-4 h-60 w-full hover:shadow-2xl">
                     <img class="bg-white rounded-full p-5" src="./Assets/dog-cartoon.png" alt="Dog">
                     <h1 class="adlam-regular">Dog</h1>
@@ -139,20 +144,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h1 class="adlam-regular pb-5 md:pb-10 text-2xl md:text-4xl">Trending Pet Products</h1>
-            <div class="bg-primary p-9 h-96 rounded-lg">
-                 <div class="relative">
-                    <h1 class="adlam-regular pb-5 md:pb-10 text-2xl md:text-4xl">T-Shirt For Dogs</h1>
-                    <p>Discover a world of treats, toys, and<br>essentials handpicked for</p>
-                    <br>
-                    <button class="btn px-10 text-xl">
-                        Shop Now
-                    </button>
-                    <img class="absolute top-8 left-48" src="./Assets/cute-pet-small.png" alt="Cute Pet">
-                 </div>
-            </div>
-        </section>
+        <!--Products-->
+        
     </main>
 
     <footer>
